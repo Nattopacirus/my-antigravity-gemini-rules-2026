@@ -76,3 +76,16 @@ Before completing any task and presenting it to the user, you MUST verify the fo
 1. **Type mismatches:** Ensure there is no type mismatch between the Backend and Frontend (e.g., String from DOM vs Number from DB). If a loose or strict equality check is used, ensure the types match perfectly via casting.
 2. **JSON Response Completeness:** Ensure that the JSON response payload from the Backend contains all the fields that the UI expects and uses.
 If any risks or mismatches are found, YOU MUST FIX THEM IMMEDIATELY before concluding the implementation.
+
+# CONTEXT MANAGEMENT & TOKEN CONSERVATION PROTOCOL
+
+## 1. Scratchpad Protocol (State Externalization)
+- Never rely on long chat context. Maintain project state strictly in `.ai/context_tracker.md`.
+- Update `.ai/context_tracker.md` immediately upon completing any milestone or subtask using this format:
+  ```markdown
+  # Active Task: [Current Feature / Story]
+  - Status: [IN_PROGRESS | COMPLETED | BLOCKED]
+  - Architecture & Decisions: [Key choices & rationale]
+  - Modified Files: [Exact file paths created/edited]
+  - Blocker / Assumptions: [Unresolved issues or errors]
+  - Next Step: [Single, immediate next action]
