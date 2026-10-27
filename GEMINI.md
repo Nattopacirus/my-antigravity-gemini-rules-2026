@@ -80,8 +80,8 @@ If any risks or mismatches are found, YOU MUST FIX THEM IMMEDIATELY before concl
 # CONTEXT MANAGEMENT & TOKEN CONSERVATION PROTOCOL
 
 ## 1. Scratchpad Protocol (State Externalization)
-- Never rely on long chat context. Maintain project state strictly in `.ai/context_tracker.md`.
-- Update `.ai/context_tracker.md` immediately upon completing any milestone or subtask using this format:
+- Never rely on long chat context. Maintain project state strictly in `.agents/context_tracker.md`.
+- Update `.agents/context_tracker.md` immediately upon completing any milestone or subtask using this format:
   ```markdown
   # Active Task: [Current Feature / Story]
   - Status: [IN_PROGRESS | COMPLETED | BLOCKED]
